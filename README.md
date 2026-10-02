@@ -20,7 +20,13 @@
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-[Explore Features](#-features) • [Live Demo](#-interface-states) • [Architecture](#-system-architecture) • [Voice Commands](#-voice-commands) • [Quick Start](#-quick-start)
+<br/>
+
+<img src="./public/preview.png" alt="Nova AI Assistant - 3D Quantum Hologram Interface" width="100%" />
+
+<br/><br/>
+
+[Explore Features](#-features) • [Interface States](#-interface-states) • [Architecture](#-system-architecture) • [Controls](#-controls--navigation) • [Quick Start](#-quick-start)
 
 ---
 
@@ -52,9 +58,9 @@ With deep Web Speech API integration, NOVA listens to natural voice commands, op
 - **Web Audio API Spectrum Analyser**: Live 128-bin FFT spectrum analyser feeding both the 3D geometry and the HUD audio waveform equalizer.
 
 ### ⚡ 3. Voice Automation & Command Protocol
-- **YouTube Media Integration**: *"Play Interstellar soundtrack on YouTube"* opens the targeted search query directly.
-- **Quick-Launch Web App Matrix**: Rapid shortcuts for WhatsApp, Gmail, LeetCode, ChatGPT, Google Maps, and arbitrary `.com` web destinations.
-- **Google Gemini Generative AI**: Fallback to Google Gemini for open-ended intelligence, problem-solving, code explanations, and natural dialogue.
+- **YouTube Media Integration**: Plays videos and tracks directly via natural voice queries.
+- **Quick-Launch Web App Matrix**: Rapid shortcuts for WhatsApp, Gmail, LeetCode, ChatGPT, Google Maps, and arbitrary web destinations.
+- **Google Gemini Generative AI**: Instant fallback to Google Gemini for open-ended intelligence, problem-solving, code explanations, and conversational reasoning.
 
 ### 🖥️ 4. Cyberpunk HUD & Telemetry Interface
 - **Animated CRT Scanline & Phosphor Beams**: Authentic retro-futuristic display effects.
@@ -100,17 +106,6 @@ flowchart TD
     TTS --> User
     HUDTerminal --> User
 ```
-
----
-
-## 🗣️ Voice Commands
-
-| Category | Example Phrases | Action |
-| :--- | :--- | :--- |
-| **YouTube** | *"Play synthwave radio on youtube"*<br/>*"Search quantum computing on youtube"* | Opens YouTube search results in a new tab |
-| **App Launcher** | *"Open WhatsApp"*<br/>*"Launch LeetCode please"*<br/>*"Visit Gmail"*<br/>*"Go to ChatGPT"* | Instant direct navigation to the web application |
-| **Custom Domains** | *"Open github.com"*<br/>*"Visit wikipedia.org"* | Navigates directly to the specified domain |
-| **AI Conversation** | *"Explain string theory in two sentences"*<br/>*"How does a quantum computer work?"*<br/>*"Write a Python function to reverse a linked list"* | Generates response via Google Gemini & reads aloud |
 
 ---
 
@@ -174,29 +169,6 @@ Open your browser at `http://localhost:5173` and allow microphone access when pr
 | **Icons & Assets** | [Lucide React](https://lucide.dev/) |
 
 </div>
-
----
-
-## 📂 Project Structure
-
-```
-Nova-Ai-Assistant/
-├── public/
-│   ├── favicon.svg          # Holographic core SVG favicon
-│   └── icons.svg            # Custom icon symbols
-├── src/
-│   ├── assets/              # Static branding and media assets
-│   ├── Components/
-│   │   └── Hologram.jsx     # Three.js 3D WebGL Hologram, Shaders, Particles & HUD
-│   ├── Context/
-│   │   └── UserContext.jsx  # Web Speech STT, SpeechSynthesis TTS, and Command Router
-│   ├── App.jsx              # Main application shell & Gemini API integration
-│   ├── main.jsx             # React DOM root entry
-│   └── index.css            # Base stylesheet & Tailwind CSS configurations
-├── .env                     # Gemini API Credentials (git-ignored)
-├── package.json             # Dependencies and scripts
-└── vite.config.js           # Vite bundler configuration
-```
 
 ---
 
